@@ -1,0 +1,1 @@
+{include file='headerlinks.tpl' force_include_cache='1' force_include_cache_tags='Logic_SkinHeaderLinkList,Logic_SkinHeaderLink,Logic_CategoryList,Logic_Category'}

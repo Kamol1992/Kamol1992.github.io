@@ -1,0 +1,179 @@
+.container-form-admin
+    display: flex
+    flex-direction: row
+    justify-content: center
+    
+.form-admin
+    width: 80vw  
+
+input, textarea, select,
+    width: 90%
+    margin: 2vh
+    background: none
+    border: none
+    outline: none
+    border-bottom: 2px solid #999
+    color: #999
+    transition: .5s
+    &:focus
+        border-bottom: 2px solid #ff0057 
+
+    &:valid
+        color: #fff
+    
+    &:focus ~ label
+        top: 0%
+        left: 1%
+        font-size: 1.1em
+        font-weight: 700
+        color: #ff0057  
+    
+
+#group-form
+    position: relative
+    display: flex
+    flex: row
+    
+
+label
+    position: absolute
+    color: #999
+    font-weight: 700
+    font-size: 0.9em
+    top: 0%
+    left: 3%
+    pointer-events: none
+    transition: .5s
+    
+
+
+
+.button-form-submit input
+    padding: 10px 18px
+    border-radius: 10px
+    background-color: $green
+    color: #fff
+    width: 100px
+
+.button-form-submit input:hover
+    cursor: pointer
+    box-shadow: 0px 3px 10px #fff
+
+input:disabled
+    background-color: #999
+    color: #ccc
+    font-weight: 400
+
+input:disabled:hover
+    cursor: default
+    box-shadow: 0px 0px 0px #fff
+
+
+.button-form-addCms button
+    padding: 5px 12px
+    border-radius: 10px
+    background-color: $red
+    color: #fff
+    width: 100px
+    font-weight: 700
+
+.button-form-addCms button:hover
+    cursor: pointer
+    background-color: $green
+    color: #fff
+          
+
+.form-admin input
+    font-size: 1.2em
+    font-weight: 550
+
+#group-form textarea
+    font-size: 1.2em
+    height: 20vh
+
+
+.name_content-admin
+    background-color: #333
+    color: #999
+    box-shadow: 0px 20px 50px #000
+    margin: 20px
+    padding: 5px 10px
+
+
+.admin-text
+    display: none
+
+.code-content-admin
+    display: none
+
+.content-button-delete button
+    padding: 8px 15px
+    background-color: #ff0057
+    border-radius: 10px
+    margin: 5px
+    color: #fff
+    transition: .3s
+    font-size: 0.8em
+    font-weight: 600
+
+.content-button-delete button:hover
+    cursor: pointer
+    padding: 10px 18px
+    font-size: 0.9em
+    font-weight: 800
+
+select option
+    background-color: #999
+    color: #333
+    font-size: 1.2em
+    padding: 5px
+
+.admin-check
+    display: none
+    padding: 8px
+
+.admin-check .fa-check-circle
+    color: green 
+    font-size: 2em
+
+.admin-red-cross
+    display: none
+    padding: 8px
+
+.admin-red-cross .fa-times-circle
+    color: red 
+    font-size: 2em
+
+.admin-check--active
+    display: block
+
+.admin-red-cross--active
+    display: block
+
+.admin-check-content
+    display: none
+    padding: 8px
+
+.admin-check-content .fa-check-circle
+    color: green 
+    font-size: 2em
+
+.admin-red-cross-content
+    display: none
+    padding: 8px
+
+.admin-red-cross-content .fa-times-circle
+    color: red 
+    font-size: 2em
+
+.admin-check-content--active
+    display: block
+
+.admin-red-cross-content--active
+    display: block
+
+
+
+
+
+

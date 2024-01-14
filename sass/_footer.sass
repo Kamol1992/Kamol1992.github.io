@@ -1,0 +1,38 @@
+.container-footer
+    display: flex
+    flex-direction: column
+    background-color: $colorNav
+    padding: 2% 5%
+    overflow: hidden
+
+.footer-column-left
+    padding: 2% 5%
+
+
+.footer-text
+    color: #fff
+    font-size: 1.2rem
+
+.footer-column-right
+    padding: 2% 5%
+.column-contact
+    color: #fff
+    font-size: 1.3rem
+
+.column-contact .fas, .far
+    font-size: 2rem
+    padding: 5px
+
+@media (min-width: $mediaMinWidth)
+    .container-footer
+        display: flex
+        flex-direction: row
+        background-color: $colorNav
+        padding: 5% 5%
+    
+    .footer-column-left
+        width: 50vw
+        border-right: 1px solid #fff
+    
+    .footer-column-right
+        width: 50vw

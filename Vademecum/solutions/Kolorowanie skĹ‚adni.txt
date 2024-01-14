@@ -1,0 +1,5 @@
+<source lang="php">
+<?php
+  echo "Witaj, Świecie\n";
+?>
+</source>

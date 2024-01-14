@@ -1,0 +1,264 @@
+.navbar-container
+    left: 10%
+
+.navbar--active
+    top: 0
+    position: sticky
+    z-index: 999
+    background-color: rgba(256,256,256,0.7)
+    box-shadow: 3px 3px 3px
+    background-color: $colorNav
+    transition: 0.3s
+
+.navbar-brand
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    padding: 10px 5%
+
+.navbar-brand a
+    text-decoration: none
+
+.brand-container
+    display: flex
+    flex-direction: column
+    text-decoration: none
+
+
+.container-image-brand
+    color: $colorNav
+    z-index: 101
+    padding: 0 10px
+
+.brand--active
+    color: #fff
+
+.image-brand--active
+    color: #fff
+
+.container-image-brand i
+    font-size: 1.4rem
+
+.image-brand--active
+    color: #fff
+    z-index: 101
+
+.brand-name
+    font-size: 1.4rem
+    color: $colorNav
+    z-index: 101
+.brand-name span
+    font-size: 1rem
+    font-weight: 600
+    position: relative
+
+.brand--active
+    color: #fff
+.navigation
+    position: absolute
+    transform: translateY(-800px)
+    transition: .5s
+    width: 100%
+    background-color: $colorNav
+    border-bottom-left-radius: 100%
+    padding: 120px 0
+    overflow: hidden
+    z-index: 100
+    color: #fff
+.navigation--active
+    transform: translateY(-135px)
+    
+
+.navigation ul
+    display: flex
+    flex-direction: column
+    align-items: center
+    box-sizing: border-box
+    
+.navigation ul li
+    list-style-type: none
+    padding: 12px
+    font-size: 1.5em
+    box-sizing: border-box
+    width: 100%
+    text-align: center
+    
+
+.nav-name
+    text-decoration: none
+    color: #fff
+    position: relative
+    padding: 3px 1px
+
+
+.navigation ul li a:before
+    content: ""
+    position: absolute
+    height: 2px;
+    background-color: #fff
+    bottom: 0
+    left: 50%
+    right: 50%
+    transition: 0.3s
+    z-index: 101
+
+    
+
+.navigation ul li a:hover:before
+    left: 0%
+    right: 0%
+    z-index: 101
+
+.hamburger
+    padding: 10px
+    display: block
+    cursor: pointer
+    background-color: $colorNav
+    border: 0
+    margin: 0
+    position: absolute
+    right: 20px
+    width: 55px
+    height: 55px
+    border-radius: 28px
+    z-index: 101
+     
+
+.hamburger-box
+    width: 40px
+    height: 24px
+    display: inline-block
+    position: relative
+
+.hamburger-inner
+    width: 70%
+    height: 3px
+    background-color: #fff
+    position: absolute
+    left: 7%
+    top: 50%
+    transform: translateY(-50%)
+    transition: background-color .3s .2s
+    text-align: center
+    z-index: 1
+.hamburger-inner::before, .hamburger-inner::after
+    content: ""
+    width: 100%
+    height: 3px
+    background-color: #fff
+    position: absolute
+    content: ""
+    left: 0
+    transition: transform .3s .2s
+    z-index: 1
+
+.hamburger-inner::before
+    top: -10px
+
+.hamburger-inner::after
+    top: 10px
+
+.hamburger--active .hamburger-inner
+    background-color: transparent
+.hamburger--active .hamburger-inner::before
+    transform: translateY(10px) rotate(45deg)
+.hamburger--active .hamburger-inner::after
+    transform: translateY(-10px) rotate(-45deg)
+    
+
+
+/*media query min 960px*/   
+@media (min-width: $mediaMediumWidth)
+    .navbar-container
+        box-shadow: none
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    
+    .navbar--active
+        top: 0
+        position: sticky
+        z-index: 999
+        background-color: rgba(256,256,256,0.7)
+        box-shadow: 3px 3px 3px
+        padding: 10px 0
+        background-color: $colorNav
+        transition: 0.3s
+    
+    .navbar-container--active
+        background-color: $colorNav
+        z-index: 999
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        position: sticky
+        top: 0
+    
+    .brand-container
+        display: flex
+        flex-direction: row
+
+    .navbar-brand
+        display: flex
+        flex-direction: row
+        padding: 10px 5%
+        margin: 2px
+        left: 10%
+    .brand-name
+        color: $colorNav
+        display: block
+
+    .brand--active
+        color: #fff
+
+    .container-image-brand
+        color: $colorNav
+    
+    .image-brand--active
+        color: #fff
+
+    .navigation
+        position: absolute
+        transform: translateY(0%)
+        background-color: transparent
+        padding: 0 0
+        display: block
+        width: auto
+        right: 10%
+        border-bottom-left-radius: 0%
+    
+
+    .navigation ul
+        display: flex
+        flex-direction: row
+        justify-content: center
+        box-sizing: border-box
+    .navigation ul li
+        list-style-type: none
+        padding: 12px
+        font-size: 1em
+        box-sizing: border-box
+        width: auto
+        text-align: center
+
+    .nav-name
+        color: $colorNav
+    
+    .nav--active
+        color: #fff
+
+    
+    .navigation ul li a:before
+        background-color: $colorNav
+
+    .navigation ul li a.nav--active:before
+        background-color: #fff
+
+    .hamburger
+        display: none
+        
+
+
+
+
+

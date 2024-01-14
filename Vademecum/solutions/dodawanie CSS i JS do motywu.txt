@@ -1,0 +1,8 @@
+function cloudyblog_scripts() {
+
+  wp_enqueue_style( 'cloudyblog-font', 'https://fonts.googleapis.com/css?family=Open+Sans:400%7CPoppins:600,700' );
+  wp_enqueue_style( 'cloudyblog-style', get_stylesheet_uri() );
+  wp_enqueue_script( 'cloudyblog-script', get_template_directory_uri() . '/js/cloudy-blog.js', array(), '20151215', true );
+
+}
+add_action( 'wp_enqueue_scripts', 'cloudyblog_scripts' );

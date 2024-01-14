@@ -1,0 +1,20 @@
+<div class="k-alert" style="display: none;">
+{if true == $user_logged}
+{if $user->basket->sumProducts(false) > 0 and $user->basket->sumProducts(false)<100}
+<div class="k-alert-50">
+
+<p>50% rabatu na dostawę (brakuje jeszcze -{math equation="x - y" x=100 y=$user->basket->sumProducts(false) format="%.2f"} do 100%)</p>
+
+</div>
+{elseif $user->basket->sumProducts(false)>=100}
+<div class="k-alert-100">
+
+<p>100% rabatu na dostawę</p>
+
+</div>
+{/if}
+
+{else}
+<div class="k-alert-login">Chcesz otrzymać rabat na dostawę? Załóż konto.
+{/if}
+</div>

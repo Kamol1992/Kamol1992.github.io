@@ -1,0 +1,182 @@
+.section-portfolio
+    padding: 5vh 5vw
+    box-sizing: border-box
+
+.section-container-portfolio
+    padding: 10% 2% 15% 2%
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-bottom: 1px solid grey
+
+.section-container-portfolio-right
+    padding: 10% 2% 15% 2%
+    border-bottom: 1px solid grey
+
+.name-section-portfolio
+    display: block
+    text-align: center
+
+.name-section-portfolio h2
+    font-size: 1.5rem
+    color: grey
+    font-weight: 200
+    
+
+.image-portfolio-left
+    position: relative
+
+
+.image-portfolio-left img
+    max-width: 100%
+    border: 2px solid $colorNav
+    box-shadow: 3px 3px 3px
+
+.social-ikon
+    text-align: center
+    max-width: 100%
+
+.icon-technology
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    font-size: 20px
+    
+.icon-technology i
+    font-size: 3rem
+    color: $purpleColor
+    padding: 10px 10px
+
+.button-portfolio
+    display: none
+
+.social-ikon button
+    padding: 12px 14px
+    border-radius: 30px
+    border: 1px solid $purpleColor
+    transition: 0.3s
+    background-color: $purpleColor
+    color: #fff
+    margin: 10px
+
+.social-ikon button .fas
+    font-size: 1rem
+
+.social-ikon button:hover
+    color: $purpleColor
+    background-color: #fff
+    cursor: pointer
+
+.header-portfolio-content h3
+    font-size: 1.5rem
+    color: $colorNav
+    font-weight: 700
+    text-align: center
+
+.text-portfolio-content p
+    color: gray
+    line-height: 1.25
+    text-align: justify
+    
+
+.buttons-portfolio-content
+    text-align: center
+
+.button-portfolio-content
+    padding: 12px 16px
+    border-radius: 30px
+    border: 1px solid $purpleColor
+    transition: 0.3s
+    color: $purpleColor
+    margin: 10px
+    background-color: #fff
+
+.button-portfolio-content:hover
+    background-color: $purpleColor
+    color: #fff
+    cursor: pointer
+
+@media (min-width: $mediaMediumWidth)
+    .section-container-portfolio
+        flex-direction: row
+        justify-content: space-between
+        
+    .section-container-portfolio-right
+        padding: 10% 2% 15% 2%
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+    
+    .portfolio-image-container
+        width: 100%
+        padding: 0 1%
+        overflow: hidden
+
+    .image-portfolio-left img
+        width: 100%
+        border: 2px solid $colorNav
+        box-shadow: 3px 3px 3px
+        
+    
+    .social-ikon
+        display: flex
+        flex-direction: column
+        position: absolute
+        text-align: center
+        padding: 10%
+        box-sizing: border-box
+        background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.0) 100%)
+        min-width: calc(100% + 2px)
+        transform: translateY(2%)
+        transition: 0.5s
+    
+    .social-ikon a
+        text-decoration: none
+
+    .icon-technology
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+    
+    .icon-technology i
+        font-size: 3rem
+        color: #fff
+        padding: 10px 10px
+
+    .button-portfolio-container
+        display: flex
+        flex-direction: row
+        justify-content: center
+    
+    .button-portfolio
+        display: block
+
+
+
+    .social-ikon button
+        padding: 12px 14px
+        border-radius: 30px
+        border: 1px solid $purpleColor
+        transition: 0.3s
+        background-color: $purpleColor
+        color: #fff
+        margin: 10px
+    
+    .portfolio-image-container:hover .social-ikon
+        transform: translateY(-102%)
+
+
+    .content-portfolio
+        padding: 0 7%
+        width: 50vw
+        margin: 2%
+    
+    .header-portfolio-content h3
+        font-size: 1.8rem
+
+    .text-portfolio-content p
+        font-size: 1.3rem
+
+    
